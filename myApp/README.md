@@ -1,0 +1,3 @@
+
+ ionic run android --device
+ 
