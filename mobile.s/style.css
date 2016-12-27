@@ -57,7 +57,7 @@ body {
     margin: 0;
     padding: 0;
     color: #232323;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 1.4;
     width: 100%;
     -webkit-text-size-adjust: 100%;
@@ -2547,4 +2547,46 @@ ul.responsive_table li:first-child {
         width: 10%;
         padding: 0px 3px;
     }
+}
+
+
+/* ----- now my shit --------------- */
+.guests img {
+    display: inline !important;
+}
+img.star {
+    float: left;
+    top: 10px;
+    position: relative;
+    width: 36px;
+    padding-right: 10px;
+}
+.event-item .title {
+    float: left;
+    left: 50px;
+}
+
+.description {
+    padding: 10px 0;
+}
+
+img.event {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+div.location {
+}
+
+.event-item {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid gray;
+}
+img.img24 {
+    width: 24px;
+}
+
+.guests {
+    padding-bottom: 1em;
 }
