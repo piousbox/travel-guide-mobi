@@ -1,4 +1,40 @@
-<h1>
-  {{title}}
-</h1>
+<h1>Travel Guide Mobi</h1>
 
+<nav>
+  <a routerLink="/about" routerLinkActive="active">About</a>
+  <a routerLink="/users/firsttime" routerLinkActive="active">users firsttime</a>
+  <a routerLink="/about" routerLinkActive="active">Edit Profile</a>
+  <a routerLink="/about" routerLinkActive="active">Set Travel Plans</a>
+  <a routerLink="/logout" routerLinkActive="active">View Travel Plans</a>
+  <a>Logout</a>
+</nav>
+
+<nav class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">Travel Guide Mobi</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" routerLinkActive="active">
+        <li class="nav-item"><a class="nav-link" routerLink="home">About</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="about">In a City</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="courses">Travel Plans</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+
+<alert type="success">success!</alert>
+
+<div class="router-outlet">
+     <router-outlet></router-outlet>
+</div>
