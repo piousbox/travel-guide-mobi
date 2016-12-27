@@ -18,6 +18,7 @@
   "homepage": "https://github.com/goblortikus/operaevent-websocket#readme",
   "dependencies": {},
   "devDependencies": {
+    "angular-cli": "^1.0.0-beta.24",
     "cordova": "^6.4.0",
     "ionic": "^2.1.18"
   }
