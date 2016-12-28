@@ -1,0 +1,74 @@
+{
+  "project": {
+    "version": "1.0.0-beta.24",
+    "name": "travel-guide-angular"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.json",
+      "prefix": "app",
+      "mobile": false,
+      "styles": [
+        "styles.css",
+        "assets/Framework7-1.5.2/dist/css/framework7.ios.css",
+        "assets/mobiles/style.css",
+        "assets/mobiles/css/swipebox.css",
+        "assets/mobiles/css/animations.css"
+      ],
+      "scripts": [
+        "assets/jquery/jquery-3.1.1.js",
+        "assets/mobiles/js/jquery.validate.min.js",
+        "assets/Framework7-1.5.2/dist/js/framework7.js",
+        "assets/mobiles/js/jquery.swipebox.js",
+        "assets/mobiles/js/jquery.fitvids.js",
+        "assets/mobiles/js/email.js",
+        "assets/mobiles/js/audio.min.js",
+        "assets/mobiles/js/classie.js",
+        "assets/mobiles/js/selectFx.js",
+        "assets/mobiles/js/my-app.js"
+      ],
+      "environments": {
+        "source": "environments/environment.ts",
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "addons": [],
+  "packages": [],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "prefixInterfaces": false,
+    "inline": {
+      "style": false,
+      "template": false
+    },
+    "spec": {
+      "class": false,
+      "component": true,
+      "directive": true,
+      "module": false,
+      "pipe": true,
+      "service": true
+    }
+  }
+}
