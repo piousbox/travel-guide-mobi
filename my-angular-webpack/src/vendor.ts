@@ -12,10 +12,12 @@ import '@angularclass/hmr';
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
 
-import 'jquery';
+// import 'jquery';
 
-import '../foundation/css/foundation.css';
-import '../foundation/css/app.css';
-import '../foundation/js/vendor/foundation.js';
+// import '../trash/trash.js';
 
-import '../trash/trash.js';
+import '../src/vendor/framework7/css/framework7.ios.css';
+import '../src/vendor/mobile.s/swipebox.css';
+import '../src/vendor/mobile.s/animations.css';
+import '../src/vendor/mobile.s/style.css';
+
