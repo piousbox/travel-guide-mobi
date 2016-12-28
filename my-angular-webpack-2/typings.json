@@ -1,0 +1,8 @@
+{
+  "name": "my-angular-webpack-2",
+  "dependencies": {},
+  "globalDependencies": {
+    "jasmine": "registry:dt/jasmine#2.5.0+20161228163159",
+    "node": "registry:env/node#6.0.0+20161225010013"
+  }
+}

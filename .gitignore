@@ -2,3 +2,5 @@
 /node_modules
 *~
 *.trash
+
+node_modules
