@@ -1,4 +1,4 @@
 
 import 'reflect-metadata';
-import 'platform-browser';
-import 'platform-browser-dynamic';
+require('zone.js/dist/zone');
+require('zone.js/dist/long-stack-trace-zone');

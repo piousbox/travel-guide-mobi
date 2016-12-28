@@ -4,8 +4,8 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { PagesAboutComponent } from './pages-about/pages-about.component';
-// import { UsersFirsttimeComponent } from './users-firsttime/users-firsttime.component';
+// import { PagesAboutComponent } from './pages-about/pages-about.component';
+import { UsersFirsttimeComponent } from './users-firsttime/users-firsttime.component';
 
 // import { ApiService } from './shared';
 // import { routing } from './app.routing';
@@ -14,8 +14,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: '/users/firsttime', pathMatch: 'full' },
-    // { path: '/users/firsttime', component: UsersFirsttimeComponent },
-    { path: '/pages/about', component: PagesAboutComponent }
+    { path: '/users/firsttime', component: UsersFirsttimeComponent }
+    // { path: '/pages/about', component: PagesAboutComponent }
 ];
 /**
  * 20161227 routes
@@ -45,8 +45,8 @@ const appRoutes: Routes = [
 @NgModule({
     declarations: [
         AppComponent,
-        // UsersFirsttimeComponent,
-        PagesAboutComponent
+        UsersFirsttimeComponent,
+        // PagesAboutComponent
     ],
     imports: [
         BrowserModule,
