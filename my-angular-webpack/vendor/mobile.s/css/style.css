@@ -40,7 +40,7 @@ Template:	Mobile.S - Mobile HTML Template
 /* 1. RESET		 						 */
 /*===============================================*/
 
-@import "css/reset.css";
+@import "/stylesheets/reset.css";
 /*===============================================*/
 /* 2. GENERAL		 						 */
 /*===============================================*/
@@ -625,7 +625,7 @@ ul.toolbar_icons li.menuicon img {
 .page_single ul.simple_list li {
     margin: 0 0 10px 0;
     padding: 0 0 0 20px;
-    background: url(images/bullet.png) no-repeat left;
+    background: url(/images/bullet.png) no-repeat left;
 }
 .toolbarpage {
     float: left;
@@ -731,11 +731,11 @@ ul.toolbar_icons li.menuicon img {
     width: 9px;
     height: 9px;
     display: inline-block;
-    background: url(images/nav_bullet.png) no-repeat center;
+    background: url(/images/nav_bullet.png) no-repeat center;
     opacity: 1;
 }
 .swiper-container .swiper-pagination-bullet-active {
-    background: url(images/nav_active.png) no-repeat center;
+    background: url(/images/nav_active.png) no-repeat center;
 }
 .slide-arrows {
     top: 43%;
@@ -1288,7 +1288,7 @@ a.next_shop {
     border: 2px #fff solid;
 }
 .color_selectors input[type=radio]:checked + label {
-    background-image: url(images/bullet.png);
+    background-image: url(/images/bullet.png);
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -1576,13 +1576,13 @@ a.checkout {
     height: 23px;
 }
 .switch13 {
-    background: url(images/switch_13.png) no-repeat center;
+    background: url(/images/switch_13.png) no-repeat center;
 }
 .switch12 {
-    background: url(images/switch_12.png) no-repeat center;
+    background: url(/images/switch_12.png) no-repeat center;
 }
 .switch11 {
-    background: url(images/switch_11.png) no-repeat center;
+    background: url(/images/switch_11.png) no-repeat center;
 }
 .gallery_switch {
     width: 100%;
@@ -1757,17 +1757,17 @@ ul.photo_gallery_11 li img {
     padding: 0 5px;
 }
 .post_single span.post_date {
-    background: url(images/date.png) no-repeat left;
+    background: url(/images/date.png) no-repeat left;
     padding: 10px 0 5px 25px;
     margin: 0 0 0 0;
 }
 .post_single span.post_author {
-    background: url(images/author.png) no-repeat left;
+    background: url(/images/author.png) no-repeat left;
     padding: 10px 0 5px 25px;
     margin: 0 0 0 10px;
 }
 .post_single span.post_comments {
-    background: url(images/comments.png) no-repeat left;
+    background: url(/images/comments.png) no-repeat left;
     padding: 10px 0 5px 23px;
     margin: 0 0 0 10px;
 }
@@ -1892,7 +1892,7 @@ ul.comments li {
     border-top: none;
     -webkit-appearance: none;
     color: #000000;
-    background: url(images/dropdown.png) no-repeat right;
+    background: url(/images/dropdown.png) no-repeat right;
 }
 .loginform .form_select option {
     padding: 3px;
@@ -2092,7 +2092,7 @@ div.cs-active {
     padding: 10px 5%;
     border-bottom: 1px #ddd solid;
     border-radius: 0px;
-    background: url(images/select_bullet.png) no-repeat right center;
+    background: url(/images/select_bullet.png) no-repeat right center;
 }
 .selector_overlay_register .cs-select ul span,
 .selector_overlay_accountnr .cs-select ul span,
@@ -2108,7 +2108,7 @@ div.cs-skin-overlay {
     color: #000000;
 }
 .cs-skin-overlay > span {
-    background: url(images/dropdown.png) no-repeat right center #ffffff;
+    background: url(/images/dropdown.png) no-repeat right center #ffffff;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -2117,7 +2117,7 @@ div.cs-skin-overlay {
     content: '';
 }
 .cs-skin-overlay.cs-active > span {
-    background: url(images/dropdown.png) no-repeat right center #ffffff;
+    background: url(/images/dropdown.png) no-repeat right center #ffffff;
     border-color: #fff;
 }
 .cs-skin-overlay .cs-options {
@@ -2158,7 +2158,7 @@ div.cs-skin-overlay {
 .cs-skin-overlay li.cs-optgroup li span:hover,
 .cs-skin-overlay li.cs-focus span,
 .cs-skin-overlay li.cs-selected span {
-    background: url(images/select_bullet_active.png) no-repeat right center;
+    background: url(/images/select_bullet_active.png) no-repeat right center;
 }
 .contactform .item-content {
     padding: 5px 0 5px 0;

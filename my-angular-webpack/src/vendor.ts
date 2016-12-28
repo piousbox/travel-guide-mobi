@@ -12,12 +12,23 @@ import '@angularclass/hmr';
 // Other vendors for example jQuery, Lodash or Bootstrap
 // You can import js, ts, css, sass, ...
 
-// import 'jquery';
+import 'jquery';
 
 // import '../trash/trash.js';
 
-import '../src/vendor/framework7/css/framework7.ios.css';
-import '../src/vendor/mobile.s/swipebox.css';
-import '../src/vendor/mobile.s/animations.css';
-import '../src/vendor/mobile.s/style.css';
+import '../vendor/framework7/css/framework7.ios.css';
+import '../vendor/mobile.s/css/swipebox.css';
+import '../vendor/mobile.s/css/animations.css';
+import '../vendor/mobile.s/css/style.css';
+
+import '../vendor/jquery/jquery.validate.min.js';
+import '../vendor/jquery/jquery.swipebox.js';
+import '../vendor/jquery/jquery.fitvids.js';
+import '../vendor/framework7/js/framework7.js';
+
+import '../vendor/mobile.s/js/email.js';
+import '../vendor/mobile.s/js/audio.min.js';
+import '../vendor/mobile.s/js/classie.js';
+import '../vendor/mobile.s/js/selectFx.js';
+import '../vendor/mobile.s/js/my-app.js';
 
