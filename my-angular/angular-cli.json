@@ -19,12 +19,22 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "../node_modules/framework7/dist/css/framework7.material.css"
+        "assets/Framework7-1.5.2/dist/css/framework7.ios.css",
+        "assets/mobiles/style.css",
+        "assets/mobiles/css/swipebox.css",
+        "assets/mobiles/css/animations.css"
       ],
       "scripts": [
-        "../node_modules/framework7/dist/js/framework7.js",
-        "../node_modules/framework7/dist/js/framework7.js.map",
-        "../node_modules/framework7/dist/js/my-app.js"
+        "assets/mobiles/js/jquery-1.10.1.min.js",
+        "assets/mobiles/js/jquery.validate.min.js",
+        "assets/mobiles/js/framework7.js",
+        "assets/mobiles/js/jquery.swipebox.js",
+        "assets/mobiles/js/jquery.fitvids.js",
+        "assets/mobiles/js/email.js",
+        "assets/mobiles/js/audio.min.js",
+        "assets/mobiles/js/classie.js",
+        "assets/mobiles/js/selectFx.js",
+        "assets/mobiles/js/my-app.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

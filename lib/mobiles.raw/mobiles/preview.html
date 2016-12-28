@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Mobile.S - mobile HTML template</title>
+<meta name="author" content="sindevo.com">
+<meta name="description" content="web app mobile template">
+<link rel="stylesheet" href="preview/preview.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="preview/js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div class="main_content">
+
+	<div class="tablet_popup">
+	     <div class="tablet_wrap"><iframe id="frametablet" frameborder="no" border="0" scrolling="no" width="768px" height="1024px"></iframe></div> 
+	     <a href="#" id="closepopup">CLOSE POPUP</a>	 
+	</div>
+	
+	<div class="desktop_popup">
+	     <div class="desktop_wrap"><iframe id="framedesktop" frameborder="no" border="0" scrolling="no" width="1366" height="900px"></iframe></div> 
+	     <a href="#" id="closepopupdsk">CLOSE</a>	 
+	</div>
+
+        <div class="left_content">
+	     <div class="logo"	>
+		 <img src="preview/images/logo.png" alt="" title=""/>
+		 <h1>mobile<span>.</span></h1>
+	    </div>
+            
+
+            <h2>Minimal mobile template for the new generation. </h2>
+	  <p>Created for a mobile website, web app, and integrated with solutions like phonegap/cordova, for a real native app. Mobile.S is build using an original design concept, some amazing animations for elements and a perfect responsive code.</p>
+            <h3>MAIN FEATURES:</h3>
+            <ul class="preview_list">
+              <li>Unique design concept</li>
+              <li>Animated page transition</li>
+              <li>Ajax page transitions</li>
+              <li>SHOP layout</li>
+              <li>NEWS/BLOG pages</li>
+            </ul>
+            <ul class="preview_list">
+              <li>NEWS/BLOG pages</li>
+              <li>User account sections</li>
+              <li>Photos / Videos / Music pages</li>
+              <li>Tabs, toggles elements</li>
+              <li>Working contact form</li>
+            </ul>		
+        </div>
+        
+
+        
+        
+        <div class="right_content">
+          <div class="iphone_bg">
+        	<div class="mobile_wrap">
+            <iframe id="frame" frameborder="no" border="0" scrolling="no" width="325px" height="570px"></iframe> 
+            </div>
+          </div>
+        </div>
+        
+        <div class="info_content">
+            <div class="swipe_to_navigate">Use your mouse to navigate</div>
+	   <div class="test_devices">
+		<h4>TEST DEMO ON OTHER DEVICES</h4>
+		  <ul>	   
+		<li><a href="#" id="loadtablet"><span>tablet</span><img src="preview/images/tablet.png" alt="" title=""/></a></li>
+		<li><a href="#" id="loaddesktop"><span>desktop</span><img src="preview/images/desktop.png" alt="" title=""/></a></li>
+		</ul>		
+		</div>
+                  <div class="clear"></div>	
+            <h3>Scan it with your mobile</h3>
+            <img src="preview/images/qrcode.png" alt="" title="" />
+            <h3>Test it directly from URL</h3>
+            <small>http://sindevo.com/mobiles/</small>
+   
+        </div>
+        
+</div>
+<script type="text/javascript" charset="utf-8">
+var $ = jQuery.noConflict(); 
+$(document).ready(function () {
+$("#frame").attr("src", "index.html");
+
+$("#loadtablet").click(function () { 
+	  var popupiframe =  $('#frame').contents().get(0).location.href;
+	  $("#frametablet").attr("src", popupiframe);
+	  $('.tablet_popup').fadeIn();
+});
+$("#closepopup").click(function () { 
+	 $('.tablet_popup').hide();
+});
+
+$("#loaddesktop").click(function () { 
+	  var popupiframedsk =  $('#frame').contents().get(0).location.href;
+	  $("#framedesktop").attr("src", popupiframedsk);
+	  $('.desktop_popup').fadeIn();
+});
+$("#closepopupdsk").click(function () { 
+	 $('.desktop_popup').hide();
+}); 
+
+
+
+});
+</script>  
+</body>
+</html>
