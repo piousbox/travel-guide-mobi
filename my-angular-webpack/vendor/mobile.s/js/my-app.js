@@ -220,5 +220,3 @@ myApp.onPageInit('photos', function (page) {
 	});	
 });
 
-$(document).foundation()
-

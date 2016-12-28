@@ -30,5 +30,5 @@ import '../vendor/mobile.s/js/email.js';
 import '../vendor/mobile.s/js/audio.min.js';
 import '../vendor/mobile.s/js/classie.js';
 import '../vendor/mobile.s/js/selectFx.js';
-import '../vendor/mobile.s/js/my-app.js';
+// import '../vendor/mobile.s/js/my-app.js';
 
