@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component.ts';
-import { PagesAboutComponent } from './pages-about/pages-about.component.ts';
-import { UsersFirsttimeComponent } from './users-firsttime/users-firsttime.component.ts';
+import { AppComponent } from './app.component';
+import { PagesAboutComponent } from './pages-about/pages-about.component';
+// import { UsersFirsttimeComponent } from './users-firsttime/users-firsttime.component';
+
 // import { ApiService } from './shared';
 // import { routing } from './app.routing';
 
@@ -13,7 +14,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: '/users/firsttime', pathMatch: 'full' },
-    { path: '/users/firsttime', component: UsersFirsttimeComponent },
+    // { path: '/users/firsttime', component: UsersFirsttimeComponent },
     { path: '/pages/about', component: PagesAboutComponent }
 ];
 /**
@@ -44,8 +45,8 @@ const appRoutes: Routes = [
 @NgModule({
     declarations: [
         AppComponent,
-        PagesAboutComponent,
-        UsersFirsttimeComponent
+        // UsersFirsttimeComponent,
+        PagesAboutComponent
     ],
     imports: [
         BrowserModule,
@@ -53,13 +54,10 @@ const appRoutes: Routes = [
         FormsModule,
         RouterModule.forRoot( appRoutes )
     ],
-    declarations: [
-        AppComponent
-    ],
     providers: [
         // ApiService
     ],
     bootstrap: [ AppComponent ]
-});
+})
 
 export class AppModule { }
