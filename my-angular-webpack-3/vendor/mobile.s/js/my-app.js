@@ -25,7 +25,7 @@ $(document).ready(function() {
 		$("#LoginForm").validate();
 		$("#ForgotForm").validate();
 		$(".close-popup").click(function() {					  
-			$("label.error").hide();
+			  $("label.error").hide();
 		});
 });
 
@@ -36,17 +36,18 @@ $$(document).on('pageInit', function (e) {
 		$(".close-popup").click(function() {					  
 			$("label.error").hide();
 		});
-
-	
-})
+});
+/*
 myApp.onPageInit('music', function (page) {
 		  audiojs.events.ready(function() {
 			var as = audiojs.createAll();
 		  });
-})
+});
+
 myApp.onPageInit('videos', function (page) {
 		  $(".videocontainer").fitVids();
-})
+});
+
 myApp.onPageInit('contact', function (page) {
 		$("#ContactForm").validate({
 		submitHandler: function(form) {
@@ -69,13 +70,10 @@ myApp.onPageInit('blog', function (page) {
 				$('#showLess').show();
 			}
 		});
-
-})
+});
 
 myApp.onPageInit('shop', function (page) {
-			
 		$('.qntyplusshop').click(function(e){
-									  
 			e.preventDefault();
 			var fieldName = $(this).attr('field');
 			var currentVal = parseInt($('input[name='+fieldName+']').val());
@@ -84,7 +82,6 @@ myApp.onPageInit('shop', function (page) {
 			} else {
 				$('input[name='+fieldName+']').val(0);
 			}
-			
 		});
 		$(".qntyminusshop").click(function(e) {
 			e.preventDefault();
@@ -96,8 +93,8 @@ myApp.onPageInit('shop', function (page) {
 				$('input[name='+fieldName+']').val(0);
 			}
 		});	
-  
-})
+});
+
 myApp.onPageInit('shopitem', function (page) {
 		$(".swipebox").swipebox();	
 		$('.qntyplusshop').click(function(e){
@@ -125,17 +122,14 @@ myApp.onPageInit('shopitem', function (page) {
   
 })
 myApp.onPageInit('cart', function (page) {
-			
     $('.item_delete').click(function(e){
         e.preventDefault();
         var currentVal = $(this).attr('id');
         $('div#'+currentVal).fadeOut('slow');
     });
-  
-})
+});
 
 myApp.onPageInit('form', function (page) {
-	
 		(function() {
 			[].slice.call( document.querySelectorAll( 'select#selectoptions' ) ).forEach( function(el) {	
 				new SelectFx(el, {
@@ -212,11 +206,9 @@ myApp.onPageInit('photos', function (page) {
 				theproducts.removeClass("photo_gallery_12");
 				theproducts.removeClass("photo_gallery_13");
 				theproducts.addClass("photo_gallery_11");
-
-			} 
-			
+			}
 		}
-
 	});	
 });
+*/
 

@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var webpackMerge = require('webpack-merge');
+var jquery = require('jquery');
 
 // Webpack Config
 var webpackConfig = {
@@ -61,7 +62,10 @@ var defaultConfig = {
 
     resolve: {
         extensions: [ '.ts', '.js' ],
-        modules: [ path.resolve(__dirname, 'node_modules') ]
+        modules: [ path.resolve(__dirname, 'node_modules') ],
+        alias: {
+            jquery: "jquery/src/jquery"
+        }
     },
 
     devServer: {
