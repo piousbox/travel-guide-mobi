@@ -19,11 +19,12 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "assets/foundation-6.3.0-complete/css/foundation.css"       
+        "assets-trash/foundation-6.3.0-complete/css/foundation.css"       
       ],
       "scripts": [
-        "assets/foundation-6.3.0-complete/js/vendor/foundation.js",
-        "assets/foundation-6.3.0-complete/js/app.js"
+        "assets-trash/jquery/jquery-3.1.1.js",
+        "assets-trash/foundation-6.3.0-complete/js/vendor/foundation.js",
+        "assets-trash/foundation-6.3.0-complete/js/app.js"
       ],
       "environments": {
         "source": "environments/environment.ts",
