@@ -1,3 +1,2 @@
 
  ionic run android --device
- 

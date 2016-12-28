@@ -19,10 +19,12 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+        "../node_modules/framework7/dist/css/framework7.material.css"
       ],
       "scripts": [
-        "../mobile.s/js/framework1.js"
+        "../node_modules/framework7/dist/js/framework7.js",
+        "../node_modules/framework7/dist/js/framework7.js.map",
+        "../node_modules/framework7/dist/js/my-app.js"
       ],
       "environments": {
         "source": "environments/environment.ts",

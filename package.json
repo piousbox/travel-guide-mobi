@@ -16,7 +16,9 @@
     "url": "https://github.com/goblortikus/operaevent-websocket/issues"
   },
   "homepage": "https://github.com/goblortikus/operaevent-websocket#readme",
-  "dependencies": {},
+  "dependencies": {
+    "framework7": "^1.5.2"
+  },
   "devDependencies": {
     "angular-cli": "^1.0.0-beta.24",
     "cordova": "^6.4.0",
