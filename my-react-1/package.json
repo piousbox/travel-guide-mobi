@@ -28,6 +28,7 @@
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.1",
+    "immutability-helper": "^2.0.0",
     "less": "^2.5.0",
     "less-loader": "^2.2.0",
     "mocha": "^3.2.0",

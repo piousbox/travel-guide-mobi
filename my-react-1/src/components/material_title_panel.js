@@ -1,4 +1,5 @@
 import React from 'react';
+import update from 'immutability-helper';
 
 const styles = {
   root: {
@@ -15,7 +16,7 @@ const styles = {
 
 const MaterialTitlePanel = (props) => {
   // const rootStyle = props.style ? {...styles.root, ...props.style} : styles.root;
-  const rootStyle = styles.root;
+  const rootStyle = props.style ? update(styles.root, { $merge: props.style }) : styles.root;
 
   return (
     <div style={rootStyle}>
