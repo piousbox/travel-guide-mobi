@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core'
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { rootRouterConfig } from './app.routes';
 import { AppComponent } from './app.component';
@@ -16,28 +16,33 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 import { UsersFirsttimeComponent } from './users-firsttime/users-firsttime.component';
 
+import { CollapseDirective } from 'ng2-bootstrap';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    AboutComponent,
-    RepoBrowserComponent,
-    RepoListComponent,
-    RepoDetailComponent,
-    HomeComponent,
-      ContactComponent,
-      UsersFirsttimeComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpModule,
-    RouterModule.forRoot(rootRouterConfig, { useHash: true })
-  ],
-  providers: [
-    GithubService
-  ],
-  bootstrap: [ AppComponent ]
+    declarations: [
+        AppComponent,
+        AboutComponent,
+        RepoBrowserComponent,
+        RepoListComponent,
+        RepoDetailComponent,
+        HomeComponent,
+        ContactComponent,
+        UsersFirsttimeComponent,
+        CollapseDirective
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpModule,
+        RouterModule.forRoot(rootRouterConfig, { useHash: true })
+    ],
+    providers: [
+        GithubService
+    ],
+    bootstrap: [ AppComponent ]
 })
 
-export class AppModule { }
+export class AppModule {
+    public isCollapsed: boolean = true;
+}
