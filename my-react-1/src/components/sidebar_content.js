@@ -29,18 +29,14 @@ const SidebarContent = (props) => {
 
   const links = [];
 
-  for (let ind = 0; ind < 10; ind++) {
-    links.push(
-      <a key={ind} href="#" style={styles.sidebarLink}>Mock menu item {ind}</a>);
-  }
-
   return (
-    <MaterialTitlePanel title="Menu" style={style}>
+    <MaterialTitlePanel title="Travel Guide Mobi" style={style}>
       <div style={styles.content}>
-        <a href="index.html" style={styles.sidebarLink}>Home</a>
-        <a href="responsive_example.html" style={styles.sidebarLink}>Responsive Example</a>
+        <a key="key1" href="#" style={styles.sidebarLink}>Cities & Events</a>
+        <a key="key2" href="#" style={styles.sidebarLink}>Set Travel Plans</a>
         <div style={styles.divider} />
-        {links}
+        <a key="key3" href="#" style={styles.sidebarLink}>Edit Profile</a>
+        <a key="key4" href="#" style={styles.sidebarLink}>Logout</a>
       </div>
     </MaterialTitlePanel>
   );

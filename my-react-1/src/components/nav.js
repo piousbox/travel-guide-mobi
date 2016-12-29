@@ -73,7 +73,7 @@ export default React.createClass({
       <span>
         {!this.state.docked &&
          <a onClick={this.menuButtonClick} href="#" style={styles.contentHeaderMenuLink}>=</a>}
-        <span> React Sidebar</span>
+        <span>React Sidebar</span>
       </span>
     );
 
@@ -91,18 +91,8 @@ export default React.createClass({
       onSetOpen: this.onSetOpen,
     };
 
-/*
-      <div className="nav nav-pills nav-stacked">
-        <ul>
-          <li><Link to="/">Beginning</Link></li>
-          <li><Link to="/page1">Page 1</Link></li>
-          <li><Link to="/page2">Page 2</Link></li>
-        </ul>
-      </div>
-*/
-
     return (
-<Sidebar {...sidebarProps}>
+      <Sidebar {...sidebarProps}>
         <MaterialTitlePanel title={contentHeader}>
           <div style={styles.content}>
             <p>React Sidebar is a sidebar component for React. It offers the following features:</p>
@@ -121,7 +111,7 @@ export default React.createClass({
             {['touchHandleWidth', 'dragToggleDistance'].map(this.renderPropNumber)}
           </div>
         </MaterialTitlePanel>
-</Sidebar>
-    )
+      </Sidebar>
+    );
   }
 });
