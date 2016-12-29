@@ -25,7 +25,8 @@ const styles = {
 };
 
 const SidebarContent = (props) => {
-  const style = props.style ? {...styles.sidebar, ...props.style} : styles.sidebar;
+  // const style = props.style ? {...styles.sidebar, ...props.style} : styles.sidebar;
+  const style = styles.sidebar;
 
   const links = [];
 

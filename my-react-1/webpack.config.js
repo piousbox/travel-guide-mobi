@@ -26,7 +26,6 @@ module.exports = {
             { test: /\.css$/, loaders: ["style-loader", "css-loader"] },
             { test: /\.less$/, loaders: ["style-loader", "css-loader", "less-loader"] },
             { test: /\.(png|jpg|ttf|woff|svg|otf|eot|svg).*?$/, loader: "file-loader" }
-            // { test: /\.jsx?/, include: APP_DIR, loader: 'babel' }
         ]
     },
     plugins: [
