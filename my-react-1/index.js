@@ -1,11 +1,11 @@
 import React from 'react';
 import {render} from 'react-dom';
 import {Router, Route, hashHistory} from 'react-router';
-import App from './src/app'
+import App from './src/app';
 
 // Global Styles
-import './assets/styles/bootstrap.css'
-import './assets/styles/index.less'
+import './assets/styles/bootstrap.css';
+import './assets/styles/index.less';
 
 // Components
 import Page1 from './src/components/page1.js';
