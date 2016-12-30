@@ -14,7 +14,7 @@ import Page2 from './src/components/page2.js';
 import About from './src/components/about';
 import UsersFirsttime from './src/components/users-firsttime/users-firsttime';
 import { default as TravelPlansIndex } from './src/components/travel-plans/index';
-import { default as TravelPlansEdit } from './src/components/travel-plans/edit';
+import { default as TravelPlansEditMany } from './src/components/travel-plans/edit-many';
 import { default as CitiesShow } from './src/components/cities/show';
 import { default as CitiesIndex } from './src/components/cities/index';
 
@@ -26,7 +26,7 @@ render((
       <Route path="/pages/about" component={About} />
       <Route path="/users/firsttime" component={UsersFirsttime} />
       <Route path="/travel-plans" component={TravelPlansIndex} />
-      <Route path="/travel-plans/edit" component={TravelPlansEdit} />
+      <Route path="/travel-plans/edit" component={TravelPlansEditMany} />
       <Route path="/cities/:cityName/from/:from/until/:until" component={CitiesShow} />
       <Route path="/cities" component={CitiesIndex} />
       <Redirect from="/" to="/users/firsttime" />
