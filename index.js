@@ -8,7 +8,7 @@ import './assets/styles/index.less'
 
 import App from './src/app'
 import Nav from './src/nav'
-import { About } from './src/pages'
+import { About, Terms } from './src/pages'
 import { Firsttime, Login } from './src/users'
 import { Index as TPIndex, EditMany } from './src/travel-plans'
 import { Dashboard } from './src/manager'
@@ -18,6 +18,7 @@ render((
   <Router history={hashHistory}>
     <Route component={Nav}>
       <Route path="/pages/about" component={About} />
+      <Route path="/pages/terms" component={Terms} />
 
       <Route path="/users/firsttime" component={Firsttime} />
       <Route path="/users/login" component={Login} />

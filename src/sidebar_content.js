@@ -44,6 +44,8 @@ export default React.createClass({
     <Link style={styles.sidebarLink} to="/travel-plans/edit" onClick={this.props.onClickHandle}>Set Travel Plans</Link>
     <div style={styles.divider} />
     <Link style={styles.sidebarLink} to="/profiles/edit" onClick={this.props.onClickHandle}>Edit Profile</Link>
+    <Link style={styles.sidebarLink} to="/pages/about" onClick={this.props.onClickHandle}>About</Link>
+    <Link style={styles.sidebarLink} to="/pages/terms" onClick={this.props.onClickHandle}>Terms</Link>
     <Link style={styles.sidebarLink} to="/logout" onClick={this.props.onClickHandle}>Logout</Link>
   </div>
 </MaterialTitlePanel>
