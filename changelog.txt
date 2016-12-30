@@ -3,3 +3,4 @@
 0.3.0 - screw mobile.s and framework7, but angular2 works.
         Let's implement ng2-bootstrap sliding menu.
 0.4.0 - let's try react. hey, it's working pretty well.
+0.5.0 - it's only react now

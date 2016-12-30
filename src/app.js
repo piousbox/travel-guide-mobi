@@ -1,8 +1,6 @@
 import React from 'react';
 
-// Components
-import Nav from './components/nav.js';
-import About from './components/about.js';
+import Nav from './nav.js';
 
 const App = React.createClass({
   render() {

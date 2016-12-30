@@ -8,7 +8,8 @@
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "webpack --progress --colors",
     "lint": "eslint src",
-    "test": "mocha --reporter nyan --compilers js:babel-register --recursive"
+    "test": "mocha --reporter nyan --compilers js:babel-register --recursive",
+    "test_description": "no longer used, we use jest now."
   },
   "author": {
     "name": "piousbox",
@@ -29,6 +30,7 @@
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.1",
     "immutability-helper": "^2.0.0",
+    "jest": "^18.1.0",
     "less": "^2.5.0",
     "less-loader": "^2.2.0",
     "mocha": "^3.2.0",

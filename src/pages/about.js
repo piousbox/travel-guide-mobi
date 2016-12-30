@@ -3,6 +3,6 @@ import React from 'react'
 
 export default React.createClass({
   render () {
-    return <div>About - what's up</div>
+    return <div>About</div>
   }
 })
