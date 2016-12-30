@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router';
+import { Router, Route, hashHistory, Redirect } from 'react-router';
 import App from './src/app';
 import Nav from './src/components/nav';
 
@@ -12,15 +12,16 @@ import './assets/styles/index.less';
 import Page1 from './src/components/page1.js';
 import Page2 from './src/components/page2.js';
 import About from './src/components/about';
-import UsersFirsttime from './src/components/users-firsttime';
+import UsersFirsttime from './src/components/users-firsttime/users-firsttime';
 
 render((
   <Router history={hashHistory}>
-    <Route path="/" component={Nav}>
+    <Route component={Nav}>
       <Route path="/pages/page1" component={Page1}/>
       <Route path="/pages/page2" component={Page2}/>
       <Route path="/pages/about" component={About} />
       <Route path="/users/firsttime" component={UsersFirsttime} />
+      <Redirect from="/" to="/users/firsttime" />
     </Route>
   </Router>
 ), document.getElementById('app'));

@@ -67,8 +67,12 @@ export default React.createClass({
       </p>);
   },
 
+  onClickHandle () {
+    console.log('onClickHandle');
+  },
+
   render () {
-    const sidebar = <SidebarContent />;
+    const sidebarContent = <SidebarContent />;
 
     const contentHeader = <span>
         {this.state.docked || <a onClick={this.menuButtonClick} href="javascript:void(0);" style={styles.contentHeaderMenuLink}>=</a>}
@@ -76,7 +80,7 @@ export default React.createClass({
       </span>;
     
     const sidebarProps = {
-      sidebar: sidebar,
+      sidebar: sidebarContent,
       docked: this.state.docked,
       sidebarClassName: 'custom-sidebar-class',
       open: this.state.open,
@@ -92,10 +96,7 @@ export default React.createClass({
     return (
       <Sidebar {...sidebarProps} >
         <MaterialTitlePanel title={contentHeader}>
-<div>
-          <UsersFirsttime />
           {this.props.children}
-</div>
         </MaterialTitlePanel>
       </Sidebar>
     );

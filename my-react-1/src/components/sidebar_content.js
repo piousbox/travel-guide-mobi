@@ -1,5 +1,6 @@
-import React from 'react';
-import MaterialTitlePanel from './material_title_panel';
+import React from 'react'
+import MaterialTitlePanel from './material_title_panel'
+import { Link } from 'react-router'
 
 const styles = {
   sidebar: {
@@ -24,15 +25,25 @@ const styles = {
   },
 };
 
+const clickMe = () => {
+  console.log('click me');
+};
+
 const SidebarContent = (props) => {
   // const style = props.style ? {...styles.sidebar, ...props.style} : styles.sidebar;
   const style = props.style ? update(styles.sidebar, { $merge: props.style }) : styles.sidebar;
 
   // const links = [];
 
+  const handle = () => {
+    console.log('handle');
+  };
+
   return (
     <MaterialTitlePanel title="Travel Guide Mobi" style={style}>
       <div style={styles.content}>
+        <Link to="/pages/page1" >Page 1</Link>
+        <div style={styles.divider} />
         <a key="key1" href="#" style={styles.sidebarLink}>Cities & Events</a>
         <a key="key2" href="#" style={styles.sidebarLink}>Set Travel Plans</a>
         <div style={styles.divider} />
