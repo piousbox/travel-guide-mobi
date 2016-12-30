@@ -5,13 +5,13 @@ let renderer = TestUtils.createRenderer()
 
 import { Firsttime, Login } from '../'
 
-text('firsttime', () => {
+test('firsttime', () => {
   renderer.render(<Firsttime />)
   const result = renderer.getRenderOutput()
   expect( result.type ).toEqual( 'div' );
 })
 
-text('login', () => {
+test('login', () => {
   renderer.render(<Login />)
   const result = renderer.getRenderOutput()
   expect( result.type ).toEqual( 'div' );

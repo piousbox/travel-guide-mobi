@@ -1,18 +1,18 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { Router, Route, hashHistory, Redirect } from 'react-router';
-import App from './src/app';
-import Nav from './src/components/nav';
+import React from 'react'
+import { render } from 'react-dom'
+import { Router, Route, hashHistory, Redirect } from 'react-router'
 
 // Global Styles
-import './assets/styles/bootstrap.css';
-import './assets/styles/index.less';
+import './assets/styles/bootstrap.css'
+import './assets/styles/index.less'
 
-// Components
-import { About } from './src/components/pages';
-import { Firsttime } from './src/components/users';
-import { Index as TPIndex, EditMany } from './src/components/travel-plans';
-import { Show as CitiesShow, Index as CitiesIndex } from './src/components/cities';
+import App from './src/app'
+import Nav from './src/nav'
+import { About } from './src/pages'
+import { Firsttime, Login } from './src/users'
+import { Index as TPIndex, EditMany } from './src/travel-plans'
+import { Dashboard } from './src/manager'
+import { Edit as EventsEdit } from './src/events'
 
 render((
   <Router history={hashHistory}>
@@ -20,14 +20,14 @@ render((
       <Route path="/pages/about" component={About} />
 
       <Route path="/users/firsttime" component={Firsttime} />
+      <Route path="/users/login" component={Login} />
 
       <Route path="/travel-plans" component={TPIndex} />
       <Route path="/travel-plans/edit" component={EditMany} />
 
-      <Route path="/cities/:cityName/from/:from/until/:until" component={CitiesShow} />
-      <Route path="/cities" component={CitiesIndex} />
+      <Route path="/cities/:cityName/from/:from/until/:until" component={TPIndex} />
 
-      <Route path="/manager" component={ManagerDashboard} />
+      <Route path="/manager" component={Dashboard} />
 
       <Route path="/events/:id/edit" component={EventsEdit} />
 
