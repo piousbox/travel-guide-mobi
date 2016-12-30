@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Grid, Row, Col } from 'react-bootstrap';
 
+import { Event } from '../events';
+
 class Flag extends React.Component {
   render () {
     let source = "/assets/images/flag_icons/png/" + this.props.countryCode + ".png";
@@ -12,6 +14,7 @@ class Flag extends React.Component {
   }
 }
 
+
 export default React.createClass({
   styles: {
     center: { textAlign: 'center' }
@@ -21,19 +24,15 @@ export default React.createClass({
     return(
 <div>
   <h5 style={this.styles.center}>travel plans</h5>
+  <hr />
 
   <div style={this.styles.center}>
-    <Flag countryCode="co" />
-    <h4>Medellin</h4>
+    <h4><Flag countryCode="co" /> &nbsp; Medellin</h4>
   </div>
 
-  <hr />
-  <h4 style={this.styles.center}>2016-01-01</h4>
-  <Row>
-    <Col xs={12}></Col>
-  </Row>
-
-  <hr />
+  <Event styles={this.styles} />
+  <Event styles={this.styles} />
+  <Event styles={this.styles} />
 
 </div>
     )
