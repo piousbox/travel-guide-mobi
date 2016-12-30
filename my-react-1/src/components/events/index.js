@@ -8,13 +8,14 @@ class Event extends React.Component {
   render () {
     this.styles = {
       h2: { margin: 0 },
-      outer: { margin: '2em 0 0 0' }
+      eventImg: { height: '150px', padding: '1em' },
+      location: { padding: '5px', background: '#ececec' },
+      spaceless: { margin: 0, padding: 0, listStyle: 'none' }
     };
-
     this.styles = update( this.styles, { $merge: this.props.styles } );
 
     return (
-<div style={this.styles.outer }>
+<Grid>
 <Row>
   <Col xs={12}>
     <div style={this.styles.center}><i>2016-01-01</i></div>
@@ -27,16 +28,25 @@ class Event extends React.Component {
 </Row>
 <Row>
   <Col xs={5} >
-    img
+    <img src="assets/images/photos/event_1.png" style={this.styles.eventImg} />
   </Col>
   <Col xs={2} >
-    actions
+    <ul style={this.styles.spaceless} >
+      <li><img src="/assets/images/icons/32x32/star.png" alt="" /></li>
+      <li><img src="/assets/images/icons/32x32/map.png" alt="" /></li>
+      <li><img src="/assets/images/icons/32x32/close.png" alt="" /></li>
+    </ul>
   </Col>
   <Col xs={5} >
-    location & map
+    <div style={this.styles.location}>
+      Ruby Skye<br />
+      223 Ruth St.,<br />
+      San Francisco, CA 94505
+    </div>
   </Col>
 </Row>
-</div>
+<hr />
+</Grid>
     )
   }
 }
