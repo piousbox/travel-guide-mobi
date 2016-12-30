@@ -5,7 +5,7 @@ export default React.createClass({
 
   render () {
     return
-<MaterialTitlePanel title={contentHeader||'a'}>
+<MaterialTitlePanel title={contentHeader||'default title, wtf?'}>
   <ul>
     <li><h2>Where are you traveling to?</h2></li>
     <li>Country:</li>

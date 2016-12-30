@@ -69,10 +69,11 @@ export default React.createClass({
 
   onClickHandle () {
     console.log('onClickHandle');
+    this.setState({ open: false });
   },
 
   render () {
-    const sidebarContent = <SidebarContent />;
+    const sidebarContent = <SidebarContent onClickHandle={this.onClickHandle} />;
 
     const contentHeader = <span>
         {this.state.docked || <a onClick={this.menuButtonClick} href="javascript:void(0);" style={styles.contentHeaderMenuLink}>=</a>}
@@ -91,6 +92,7 @@ export default React.createClass({
       dragToggleDistance: this.state.dragToggleDistance,
       transitions: this.state.transitions,
       onSetOpen: this.onSetOpen,
+      onClickHandle: this.onClickHandle,
     };
 
     return (

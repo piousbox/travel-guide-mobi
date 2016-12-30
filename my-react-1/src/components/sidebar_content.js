@@ -25,38 +25,29 @@ const styles = {
   },
 };
 
-const clickMe = () => {
-  console.log('click me');
-};
+export default React.createClass({
+  getInitialState () {
+    return {}
+  },
 
-const SidebarContent = (props) => {
-  // const style = props.style ? {...styles.sidebar, ...props.style} : styles.sidebar;
-  const style = props.style ? update(styles.sidebar, { $merge: props.style }) : styles.sidebar;
+  render () {
+    const style = this.props.style ? update(styles.sidebar, { $merge: this.props.style }) : styles.sidebar;
 
-  // const links = [];
+    console.log('props:', this.props);
 
-  const handle = () => {
-    console.log('handle');
-  };
-
-  return (
-    <MaterialTitlePanel title="Travel Guide Mobi" style={style}>
-      <div style={styles.content}>
-        <Link to="/pages/page1" >Page 1</Link>
-        <div style={styles.divider} />
-        <a key="key1" href="#" style={styles.sidebarLink}>Cities & Events</a>
-        <a key="key2" href="#" style={styles.sidebarLink}>Set Travel Plans</a>
-        <div style={styles.divider} />
-        <a key="key3" href="#" style={styles.sidebarLink}>Edit Profile</a>
-        <a key="key4" href="#" style={styles.sidebarLink}>Logout</a>
-      </div>
-    </MaterialTitlePanel>
-  );
-};
-
-SidebarContent.propTypes = {
-  style: React.PropTypes.object,
-};
-
-export default SidebarContent;
+    return (
+<MaterialTitlePanel title="Travel Guide Mobi" style={style}>
+  <div style={styles.content}>
+    <Link to="/pages/page1" onClick={this.props.onClickHandle} >Page 1</Link>
+    <div style={styles.divider} />
+    <a key="key1" href="#" style={styles.sidebarLink} onClick={this.props.onClickHandle}>Cities & Events</a>
+    <a key="key2" href="#" style={styles.sidebarLink} onClick={this.props.onClickHandle}>Set Travel Plans</a>
+    <div style={styles.divider} />
+    <a key="key3" href="#" style={styles.sidebarLink}>Edit Profile</a>
+    <a key="key4" href="#" style={styles.sidebarLink}>Logout</a>
+  </div>
+</MaterialTitlePanel>
+    )
+  }
+})
 
