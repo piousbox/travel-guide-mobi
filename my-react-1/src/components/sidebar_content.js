@@ -15,13 +15,17 @@ const styles = {
   },
   divider: {
     margin: '8px 0',
-    height: 1,
+    height: '1px',
     backgroundColor: '#757575',
   },
   content: {
     padding: '16px',
     height: '100%',
     backgroundColor: 'white',
+    listStyle: 'none',
+    li: {
+      background: 'black',
+    }
   },
 };
 
@@ -33,18 +37,14 @@ export default React.createClass({
   render () {
     const style = this.props.style ? update(styles.sidebar, { $merge: this.props.style }) : styles.sidebar;
 
-    console.log('props:', this.props);
-
     return (
 <MaterialTitlePanel title="Travel Guide Mobi" style={style}>
   <div style={styles.content}>
-    <Link to="/pages/page1" onClick={this.props.onClickHandle} >Page 1</Link>
+    <Link style={styles.sidebarLink} to="/travel-plans" onClick={this.props.onClickHandle}>Cities & Events</Link>
+    <Link style={styles.sidebarLink} to="/travel-plans/edit" onClick={this.props.onClickHandle}>Set Travel Plans</Link>
     <div style={styles.divider} />
-    <a key="key1" href="#" style={styles.sidebarLink} onClick={this.props.onClickHandle}>Cities & Events</a>
-    <a key="key2" href="#" style={styles.sidebarLink} onClick={this.props.onClickHandle}>Set Travel Plans</a>
-    <div style={styles.divider} />
-    <a key="key3" href="#" style={styles.sidebarLink}>Edit Profile</a>
-    <a key="key4" href="#" style={styles.sidebarLink}>Logout</a>
+    <Link style={styles.sidebarLink} to="/profiles/edit" onClick={this.props.onClickHandle}>Edit Profile</Link>
+    <Link style={styles.sidebarLink} to="/logout" onClick={this.props.onClickHandle}>Logout</Link>
   </div>
 </MaterialTitlePanel>
     )
