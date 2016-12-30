@@ -38,6 +38,15 @@ class Event extends React.Component {
     </ul>
   </Col>
   <Col xs={5} >
+    <div className="guests">
+      <img src="assets/images/icons/20x20/author.png" alt="" />
+      <img src="assets/images/icons/20x20/author.png" alt="" />
+      <img src="assets/images/icons/20x20/author.png" alt="" />
+      <img src="assets/images/icons/20x20/author.png" alt="" />
+      <img src="assets/images/icons/20x20/author.png" alt="" />
+      ...and 3 others
+    </div>
+
     <div style={this.styles.location}>
       Ruby Skye<br />
       223 Ruth St.,<br />
