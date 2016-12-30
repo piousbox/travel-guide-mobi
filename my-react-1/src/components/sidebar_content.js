@@ -28,7 +28,7 @@ const SidebarContent = (props) => {
   // const style = props.style ? {...styles.sidebar, ...props.style} : styles.sidebar;
   const style = props.style ? update(styles.sidebar, { $merge: props.style }) : styles.sidebar;
 
-  const links = [];
+  // const links = [];
 
   return (
     <MaterialTitlePanel title="Travel Guide Mobi" style={style}>
@@ -48,3 +48,4 @@ SidebarContent.propTypes = {
 };
 
 export default SidebarContent;
+

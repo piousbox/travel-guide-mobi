@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
 import App from './src/app';
+import Nav from './src/components/nav';
 
 // Global Styles
 import './assets/styles/bootstrap.css';
@@ -15,10 +16,11 @@ import UsersFirsttime from './src/components/users-firsttime';
 
 render((
   <Router history={hashHistory}>
-    <Route path="/" component={App}/>
-    <Route path="/page1" component={Page1}/>
-    <Route path="/page2" component={Page2}/>
-    <Route path="/pages/about" component={About} />
-    <Route path="/users/firsttime" component={UsersFirsttime} />
+    <Route path="/" component={Nav}>
+      <Route path="/pages/page1" component={Page1}/>
+      <Route path="/pages/page2" component={Page2}/>
+      <Route path="/pages/about" component={About} />
+      <Route path="/users/firsttime" component={UsersFirsttime} />
+    </Route>
   </Router>
 ), document.getElementById('app'));

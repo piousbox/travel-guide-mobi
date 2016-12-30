@@ -4,12 +4,13 @@ import { Link } from 'react-router';
 import Sidebar from 'react-sidebar';
 import MaterialTitlePanel from './material_title_panel';
 import SidebarContent from './sidebar_content';
+import UsersFirsttime from './users-firsttime/users-firsttime';
 
 const styles = {
   contentHeaderMenuLink: {
     textDecoration: 'none',
     color: 'white',
-    padding: 8,
+    padding: '8px',
   },
   content: {
     padding: '16px',
@@ -69,14 +70,11 @@ export default React.createClass({
   render () {
     const sidebar = <SidebarContent />;
 
-    const contentHeader = (
-      <span>
-        {!this.state.docked &&
-         <a onClick={this.menuButtonClick} href="javascript:void(0);" style={styles.contentHeaderMenuLink}>=</a>}
+    const contentHeader = <span>
+        {this.state.docked || <a onClick={this.menuButtonClick} href="javascript:void(0);" style={styles.contentHeaderMenuLink}>=</a>}
         <span>This title</span>
-      </span>
-    );
-
+      </span>;
+    
     const sidebarProps = {
       sidebar: sidebar,
       docked: this.state.docked,
@@ -92,15 +90,12 @@ export default React.createClass({
     };
 
     return (
-      <Sidebar {...sidebarProps}>
+      <Sidebar {...sidebarProps} >
         <MaterialTitlePanel title={contentHeader}>
-          <ul>
-            <li><h2>Where are you traveling to?</h2></li>
-            <li>Country:</li>
-            <li>City:</li>
-            <li>From:</li>
-            <li>Until:</li>
-            </ul>
+<div>
+          <UsersFirsttime />
+          {this.props.children}
+</div>
         </MaterialTitlePanel>
       </Sidebar>
     );

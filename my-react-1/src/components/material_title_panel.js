@@ -36,3 +36,4 @@ MaterialTitlePanel.propTypes = {
 };
 
 export default MaterialTitlePanel;
+
