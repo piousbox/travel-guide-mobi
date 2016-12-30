@@ -4,7 +4,7 @@ let renderer = TestUtils.createRenderer()
 
 import { Dashboard } from '../'
 
-text('dashboard', () => {
+test('dashboard', () => {
   renderer.render(<Dashboard />)
   const result = renderer.getRenderOutput()
   expect( result.type ).toEqual( 'div' );
