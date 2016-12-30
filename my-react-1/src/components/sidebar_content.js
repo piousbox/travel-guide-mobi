@@ -40,7 +40,8 @@ export default React.createClass({
     return (
 <MaterialTitlePanel title="Travel Guide Mobi" style={style}>
   <div style={styles.content}>
-    <Link style={styles.sidebarLink} to="/travel-plans" onClick={this.props.onClickHandle}>Cities & Events</Link>
+    <Link style={styles.sidebarLink} to="/cities" onClick={this.props.onClickHandle}>Cities & Events</Link>
+    <Link style={styles.sidebarLink} to="/travel-plans" onClick={this.props.onClickHandle}>My Travel Plans</Link>
     <Link style={styles.sidebarLink} to="/travel-plans/edit" onClick={this.props.onClickHandle}>Set Travel Plans</Link>
     <div style={styles.divider} />
     <Link style={styles.sidebarLink} to="/profiles/edit" onClick={this.props.onClickHandle}>Edit Profile</Link>

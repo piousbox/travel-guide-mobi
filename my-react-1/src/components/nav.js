@@ -76,7 +76,7 @@ export default React.createClass({
 
     const contentHeader = <span>
         {this.state.docked || <a onClick={this.menuButtonClick} href="javascript:void(0);" style={styles.contentHeaderMenuLink}>=</a>}
-        <span>This title</span>
+        <span>&nbsp;{/* title */}</span>
       </span>;
     
     const sidebarProps = {
