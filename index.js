@@ -12,7 +12,7 @@ import { About, Terms } from './src/pages'
 import { Firsttime, Login } from './src/users'
 import { Index as TPIndex, EditMany } from './src/travel-plans'
 import { Dashboard } from './src/manager'
-import { Edit as EventsEdit } from './src/events'
+import { Show as EventsShow, Edit as EventsEdit } from './src/events'
 
 render((
   <Router history={hashHistory}>
@@ -30,6 +30,7 @@ render((
 
       <Route path="/manager" component={Dashboard} />
 
+      <Route path="/events/:id" component={EventsShow} />
       <Route path="/events/:id/edit" component={EventsEdit} />
 
       <Redirect from="/" to="/users/firsttime" />

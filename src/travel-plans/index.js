@@ -2,7 +2,7 @@
 import React from 'react'
 import { Grid, Row, Col } from 'react-bootstrap'
 
-import { Event } from '../events'
+import { Show as Event } from '../events'
 
 class Flag extends React.Component {
   render () {
@@ -15,12 +15,19 @@ class Flag extends React.Component {
 }
 
 class Index extends React.Component {
-  styles: {
-    center: { textAlign: 'center' }
-  },
+  constructor(props) {
+    super(props)
+
+    this.styles = {
+      center: { textAlign: 'center' }
+    }
+
+    console.log('this.styles here', this.styles);
+
+  }
 
   render () {
-    return(
+    return (
 <div>
   <h5 style={this.styles.center}>travel plans</h5>
   <hr />
@@ -37,6 +44,8 @@ class Index extends React.Component {
     )
   }
 }
+// Index.propTypes = {}
+// Index.defaultProps = {}
 
 class EditMany extends React.Component {
   render () {

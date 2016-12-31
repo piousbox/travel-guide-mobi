@@ -4,7 +4,7 @@ import update from 'immutability-helper';
 
 import { Grid, Row, Col } from 'react-bootstrap';
 
-class Event extends React.Component {
+class Show extends React.Component {
   render () {
     this.styles = {
       h2: { margin: 0 },
@@ -12,7 +12,7 @@ class Event extends React.Component {
       location: { padding: '5px', background: '#ececec' },
       spaceless: { margin: 0, padding: 0, listStyle: 'none' }
     };
-    this.styles = update( this.styles, { $merge: this.props.styles } );
+    this.styles = update( this.styles, { $merge: this.props.styles || {} } );
 
     return (
 <Grid>
@@ -60,5 +60,5 @@ class Event extends React.Component {
   }
 }
 
-export { Event };
+export { Show };
 
